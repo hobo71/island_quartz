@@ -20,10 +20,41 @@ width: auto;
 color: #e9e9e9;
 margin-top: 5px;
 transition: 0.4s ease-in-out;
-margin-left: 20px;
+margin-left: 5em;
 }
 .nav-link:hover {
 color: #c2c1c1;
 transition: 0.4s ease-in-out;
 text-decoration: underline;
 }
+.island-diamond {
+display: block;
+margin-right: auto;
+margin-left: auto;
+margin-top: 2em;
+}
+.title-text {
+font-size: 3em;
+display: block;
+text-align: center;
+margin-top: 0.5em;
+}
+
+/* ============= Media Queries ============= */
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {
+.island-diamond {
+margin-top: 5em;
+margin-left: 12em;
+}
+.title-text {
+font-size: 5.5em;
+display: block;
+text-align: left;
+margin-top: 1.6em;
+}}
