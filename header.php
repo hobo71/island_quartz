@@ -6,7 +6,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<nav class="navbar navbar-expand-md fixed-top">
+		<nav class="navbar navbar-expand-md fixed-top menu-bg">
 			<a class="navbar-brand text-white" href="<?php echo get_home_url(); ?>"><span class="navbar-brand mb-0 h1"><?php echo get_bloginfo('name'); ?></span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-fw fa-2x text-white"></i></button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
