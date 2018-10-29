@@ -42,6 +42,14 @@ background-color: #999;
 width: 100%;
 height: 66px;
 }
+.interiorPages {
+background: #fff;
+width: auto;
+min-height: 720px;
+display: block;
+position: relative;
+margin-top: 66px;
+}
 /* ============= Bootstrap Edits ============= */
 .nav-link {
 color: #e9e9e9;
