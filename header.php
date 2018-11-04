@@ -20,5 +20,14 @@
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				)); ?>
+				<div class="btn-group ml-auto mr-2 text-white dropleft">
+  					<button type="button" class="btn btn-info dropdown-toggle text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cart <i class="fas fa-shopping-cart"></i></button>
+  						<div class="dropdown-menu">
+    						<a class="dropdown-item" href="/long-island-quartz/cart">Cart</a>
+    						<a class="dropdown-item" href="/long-island-quartz/checkout/">Checkout</a>
+    						<a class="dropdown-item" href="#">Your Profile</a>
+    						<a class="dropdown-item" href="#">Terms of Service</a>
+  						</div>
+				</div>
 			</div>
 		</nav>

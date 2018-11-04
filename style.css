@@ -50,6 +50,10 @@ display: block;
 position: relative;
 margin-top: 66px;
 }
+.product-template-default > .interiorPages,
+.page-id-5 > .interiorPages {
+margin-bottom: -15px;
+}
 /* ============= Bootstrap Edits ============= */
 .nav-link {
 color: #e9e9e9;
