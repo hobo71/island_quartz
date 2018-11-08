@@ -1,4 +1,23 @@
 <?php 
+
+register_sidebar(array(
+    'name' => __( 'Left Footer' , 'island_quartz' ),
+    'id' => 'island_quartz_footer',
+    'description' => __( 'Footer Left' , 'island_quartz' ),
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '<h5 class="text-white">',
+    'after_title' => '</h5>'
+));
+register_sidebar(array(
+    'name' => __( 'Right Footer' , 'island_quartz' ),
+    'id' => 'island_quartz_footer_right',
+    'description' => __( 'Footer Right' , 'island_quartz' ),
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '<h5 class="text-white">',
+    'after_title' => '</h5>'
+));
 // WP Fun-Ctions
 function enqueue_liq_scripts() {
 	wp_enqueue_script( 'ajax-popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array('jquery'), null, true);

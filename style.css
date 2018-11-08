@@ -54,6 +54,15 @@ display: block;
 position: relative;
 margin-top: 66px;
 }
+body #preloader {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 99999;
+background: url("lib/img/long-island-quartz-loader.gif") 50% 38% no-repeat #fff;
+}
 .product-template-default > .interiorPages,
 .page-id-5 > .interiorPages {
 margin-bottom: -15px;
@@ -74,6 +83,12 @@ border-radius: 5px;
 background-color: #28a745 !important;
 color: #fff;
 -webkit-font-smoothing: antialiased;
+}
+.woocommerce-MyAccount-navigation-link--downloads {
+display: none;
+}
+h3#ship-to-different-address {
+font-size: 1em !important;
 }
 /* ============= Bootstrap Edits ============= */
 .nav-link {
@@ -98,11 +113,12 @@ text-decoration: underline;
 @media (min-width: 1200px) {
 .island-diamond {
 margin-top: 5em;
-margin-left: 3em;
+margin-left: 8em;
 }
 .title-text {
 font-size: 5.5em;
 display: block;
 text-align: left;
+margin-left: 1em;
 margin-top: 1.6em;
 }}

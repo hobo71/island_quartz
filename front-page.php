@@ -14,14 +14,23 @@
 		</div>
 	</header>
 	<div class="col featured">
-		<div class="container pt-4">
-			<h2>Test</h2>
+		<div class="container pt-4 pb-4">
+			<h2 class="text-center display-4 mb-4">Featured Products:</h2>
+			<div>
+				<?php echo do_shortcode('[products limit="4" orderby="rand" category="quartz-bangers"]'); ?>
+				<hr />
+				<a class="mx-auto d-block btn btn-secondary btn-lg text-uppercase" href="shop/">Shop Now</a>
+			</div>
 		</div>
 	</div>
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
+			<h2 class="text-center display-4 mb-4">About Us:</h2>
 			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/long-island-quartz-island-logo" alt="Long Island Quartz - LIQ" class="img-fluid mx-auto d-block" />
-			<p class="h4 text-center">Long Island Quartz is blah blah blah. Blah blah bleh blah... etc.</p>
+			<h3 class="text-center display-4">Providing excellence and elegance with highly detailed American made and hand crafted quartz.</h3>
 	  	</div>
+	</div>
+	<div class="col instagram">
+		
 	</div>
 <?php get_footer(); ?>
