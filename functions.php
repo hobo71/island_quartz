@@ -6,8 +6,8 @@ register_sidebar(array(
     'description' => __( 'Footer Left' , 'island_quartz' ),
     'before_widget' => '',
     'after_widget'  => '',
-    'before_title' => '<h5 class="text-white">',
-    'after_title' => '</h5>'
+    'before_title' => '<h5 class="text-white mb-3"><u>',
+    'after_title' => '</u></h5>'
 ));
 register_sidebar(array(
     'name' => __( 'Right Footer' , 'island_quartz' ),
@@ -15,8 +15,8 @@ register_sidebar(array(
     'description' => __( 'Footer Right' , 'island_quartz' ),
     'before_widget' => '',
     'after_widget'  => '',
-    'before_title' => '<h5 class="text-white">',
-    'after_title' => '</h5>'
+    'before_title' => '<h5 class="text-white mb-3"><u>',
+    'after_title' => '</u></h5>'
 ));
 // WP Fun-Ctions
 function enqueue_liq_scripts() {

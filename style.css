@@ -90,6 +90,12 @@ display: none;
 h3#ship-to-different-address {
 font-size: 1em !important;
 }
+.page_item {
+list-style-type: none;
+margin-left: -40px;
+margin-top: 5px;
+color: #e9e9e9;
+}
 /* ============= Bootstrap Edits ============= */
 .nav-link {
 color: #e9e9e9;
@@ -102,7 +108,17 @@ color: #c2c1c1;
 transition: 0.4s ease-in-out;
 text-decoration: underline;
 }
-
+.nav-link-footer {
+color: #e9e9e9;
+margin-top: 5px;
+transition: 0.4s ease-in-out;
+margin-left: 0em;
+}
+.nav-link-footer:hover {
+color: #c2c1c1;
+transition: 0.4s ease-in-out;
+text-decoration: underline;
+}
 /* ============= Media Queries ============= */
 @media (min-width: 576px) {  }
 
