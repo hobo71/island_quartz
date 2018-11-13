@@ -27,7 +27,7 @@
 		<nav class="navbar navbar-expand-md fixed-top menu-bg">
 			<a class="navbar-brand text-white" href="<?php echo get_home_url(); ?>">
 				<img src="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-60x60.png" height="30" width="30" class="d-inline-block align-top mr-2" alt="Long Island Quartz Icon" />
-				Long Island Quartz
+				<span class="mr-4">Long Island Quartz</span>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-fw fa-2x text-white"></i></button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">

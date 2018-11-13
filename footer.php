@@ -1,10 +1,10 @@
 <footer class="liq-footer">
 	<div class="container">
 		<div class="row pt-4 pb-2">
-			<div class="col-md-3">
+			<div id="leftFooter" class="col-md-3">
 				<?php dynamic_sidebar( 'island_quartz_footer' ); ?>
 			</div>
-			<div class="col-md-3">
+			<div id="middleFooter" class="col-md-3">
 				<?php dynamic_sidebar( 'island_quartz_footer_right' ); ?>
 			</div>
 			<div class="col-md-6">

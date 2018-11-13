@@ -26,8 +26,8 @@
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h2 class="text-center display-4 mb-4">About Us:</h2>
-			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/long-island-quartz-island-logo" alt="Long Island Quartz - LIQ" class="img-fluid mx-auto d-block" />
-			<h3 class="text-center display-4">Providing excellence and elegance with highly detailed American made and hand crafted quartz.</h3>
+			<img src="<?php echo get_template_directory_uri(); ?>/lib/img/long-island-quartz-island-logo" alt="Long Island Quartz - LIQ" class="img-fluid mx-auto d-block mb-3" />
+			<h3 id="about" class="text-center display-4">Providing excellence and elegance with highly detailed &dash; American made &dash; hand crafted quartz.</h3>
 	  	</div>
 	</div>
 	<div class="col instagram">

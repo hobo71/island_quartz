@@ -53,6 +53,7 @@ min-height: 720px;
 display: block;
 position: relative;
 margin-top: 66px;
+margin-bottom: -15px;
 }
 body #preloader {
 position: fixed;
@@ -63,18 +64,22 @@ height: 100%;
 z-index: 99999;
 background: url("lib/img/long-island-quartz-loader.gif") 50% 38% no-repeat #fff;
 }
-.product-template-default > .interiorPages,
-.page-id-5 > .interiorPages {
-margin-bottom: -15px;
+.woocommerce-cart > .interiorPages,
+.page-id-15 > .interiorPages  {
+margin-bottom: 0px;
 }
-.page-id-7 > .interiorPages {
+.woocommerce-checkout > .interiorPages,
+.page-id-3 > .interiorPages {
 margin-bottom: -5px;
+}
+.woocommerce-account > .interiorPages {
+margin-bottom: 0px;
 }
 #add_payment_method #payment, 
 .woocommerce-cart #payment, 
 .woocommerce-checkout #payment {
 background: transparent;
-border-radius: 5px;
+border-radius: 0px;
 }
 .woocommerce #respond input#submit.alt, 
 .woocommerce a.button.alt, 
@@ -87,45 +92,102 @@ color: #fff;
 .woocommerce-MyAccount-navigation-link--downloads {
 display: none;
 }
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+ width: 64px;
+}
+.shipping-calculator-button {
+display: none !important;
+}
+.woocommerce ul.products li.product .price {
+color: #000;
+font-weight: bold;
+font-size: 1.5em;
+}
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price {
+color: #000;
+font-size: 1.5em;
+font-weight: bold;
+}
 h3#ship-to-different-address {
 font-size: 1em !important;
 }
 .page_item {
 list-style-type: none;
+}
+.page_item a {
+color: #e9e9e9;
+}
+.liq-footer-item {
 margin-left: -40px;
-margin-top: 5px;
-color: #e9e9e9;
-}
-/* ============= Bootstrap Edits ============= */
-.nav-link {
-color: #e9e9e9;
-margin-top: 5px;
-transition: 0.4s ease-in-out;
-margin-left: 5em;
-}
-.nav-link:hover {
-color: #c2c1c1;
-transition: 0.4s ease-in-out;
-text-decoration: underline;
 }
 .nav-link-footer {
 color: #e9e9e9;
 margin-top: 5px;
 transition: 0.4s ease-in-out;
-margin-left: 0em;
 }
 .nav-link-footer:hover {
 color: #c2c1c1;
 transition: 0.4s ease-in-out;
 text-decoration: underline;
 }
+/* ============= Bootstrap Edits ============= */
+.nav-link {
+margin-left:15px;
+margin-right: 1em;
+color: #fff;
+transition: 0.4s ease-in-out;
+}
+.nav-link:hover {
+margin-left:15px;
+margin-right: 1em;
+color: #ccc;
+transition: 0.4s ease-in-out;
+}
+.navbar-toggler {
+margin-right: -20px;
+}
+.navbar-collapse {
+padding-top: 15px;
+padding-bottom: 15px;
+background-color: rgba(0, 0, 0, .9);
+margin-top: 8px;
+}
 /* ============= Media Queries ============= */
 @media (min-width: 576px) {  }
 
-@media (min-width: 768px) {  }
-
-@media (min-width: 992px) {  }
-
+@media (min-width: 768px) { 
+.navbar-collapse {
+padding-top: 15px;
+padding-bottom: 15px;
+background-color: transparent;
+margin-top: 8px;
+}
+.island-diamond {
+margin-top: 6em;
+margin-left: 6em;
+}
+.title-text {
+font-size: 3.4em;
+display: block;
+text-align: left;
+margin-top: 2.8em;
+margin-left: 1.7em;
+}}
+@media (min-width: 992px) {
+.island-diamond {
+margin-top: 6em;
+margin-left: 6em;
+}
+.title-text {
+font-size: 4em;
+display: block;
+text-align: left;
+margin-top: 2.5em;
+margin-left: 2em;
+}}
 @media (min-width: 1200px) {
 .island-diamond {
 margin-top: 5em;
