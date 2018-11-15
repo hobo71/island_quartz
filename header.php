@@ -1,8 +1,19 @@
 <!doctype html>
 	<html <?php language_attributes(); ?>>
 	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129142934-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-129142934-1');
+		</script>
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="yandex-verification" content="be0c3b0e4b9c3838" />
+		<meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/lib/img/apple-icon-72x72.png">
@@ -43,6 +54,9 @@
 				)); ?>
 				<div class="ml-auto mr-2 text-white">
   						<ul class="navbar-nav">
+  							<li class="instagram">
+  								<a target="_blank" href="https://www.instagram.com/longislandquartz/"><i class="fab fa-instagram text-white fa-lg"></i></a>
+  							</li>
   							<li class="nav-item dropdown">
   								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart mr-2"></i>Cart</a>
   								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">

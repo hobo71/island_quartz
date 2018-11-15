@@ -8,7 +8,8 @@
 				<?php dynamic_sidebar( 'island_quartz_footer_right' ); ?>
 			</div>
 			<div class="col-md-6">
-				<h5 class="text-white"><u>Instagram:</u></h5>
+			</div>
+      </div>
 			</div>
 		</div>
 	</div>
