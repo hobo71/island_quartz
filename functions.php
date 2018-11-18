@@ -95,7 +95,7 @@ function islandQuartz_mail_name( $email ){
 }
 add_filter( 'wp_mail_from_name', 'islandQuartz_mail_name' );
 function islandQuartz_mail_from ($email ){
-  return 'sales@islandquartz.com'; // new email address from sender.
+  return 'websales@islandquartz.com'; // new email address from sender.
 }
 add_filter( 'wp_mail_from', 'islandQuartz_mail_from' );
 

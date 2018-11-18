@@ -89,9 +89,26 @@ padding-left: 1rem;
 .pageHeading {
 font-size: 2.5rem;
 }
+div.fadehover {
+position: relative;
+}
+img.a {
+position: absolute;
+right: 0;
+top: 0;
+margin-top: -43px;
+z-index: 10;
+}	
+img.b {
+position: absolute;
+right: 0;
+margin-top: -43px;
+top: 0;
+}
 /* WooCommerce Overrides */
 .woocommerce-cart > .interiorPages,
-.page-id-15 > .interiorPages  {
+.page-id-15 > .interiorPages,
+.page-id-5 > .interiorPages  {
 margin-bottom: 0px;
 }
 .woocommerce-checkout > .interiorPages,
