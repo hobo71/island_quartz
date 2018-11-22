@@ -105,15 +105,29 @@ right: 0;
 margin-top: -43px;
 top: 0;
 }
+.memberMenu {
+list-style-type: none;
+margin-left: -35px;
+}
 /* WooCommerce Overrides */
 .woocommerce-cart > .interiorPages,
 .page-id-15 > .interiorPages,
-.page-id-5 > .interiorPages  {
+.page-id-5 > .interiorPages,
+.page-id-11 > .interiorPages,
+.woocommerce-page > .interiorPages,
+.archive > .interiorPages,
+.page-id-3 > .interiorPages,
+.woocommerce-checkout > .interiorPages  {
 margin-bottom: 0px;
 }
-.woocommerce-checkout > .interiorPages,
-.page-id-3 > .interiorPages {
-margin-bottom: -5px;
+.quantityCart {
+margin-right: 10px;
+position: absolute;
+margin-left: 53px;
+margin-top: 4px;
+}
+.single-product > .interiorPages {
+margin-bottom: -15px;
 }
 .woocommerce-account > .interiorPages {
 margin-bottom: 0px;
@@ -192,6 +206,12 @@ margin-top: 8px;
 .island-diamond {
 margin-top: 6em;
 margin-left: 6em;
+}
+.quantityCart {
+margin-top: 3px;
+margin-left: -5px;
+position: absolute;
+left: 0;
 }
 .pageHeading {
 visibility: visible;

@@ -128,3 +128,55 @@ $urls = array_diff( $urls, array( $emoji_svg_url ) );
  }
 return $urls;
 }
+
+//ADMIN SECTION FAVICON ITEMS TO <head> SECTION
+function islandQuartz_Favicon() {
+ echo '<link rel="Icon" type="image/x-icon" href="https://islandquartz.com/wp-content/themes/island_quartz/lib/img/favicon-32x32.png" />
+ <link rel="Shortcut Icon" type="image/x-icon" href="https://islandquartz.com/wp-content/themes/island_quartz/lib/img/favicon-32x32.png" />';
+ }
+ add_action( 'login_head', 'islandQuartz_Favicon' );
+ add_action( 'admin_head', 'islandQuartz_Favicon' );
+
+ //Style login page logo
+function liq_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/lib/img/android-icon-192x192.png) !important;
+            background-size: contain !important;
+            width: 192px !important;
+            height: 192px !important
+        }
+        body {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/lib/img/liq-header-bg.png) !important;
+        }
+        a:focus {
+            box-shadow: none;
+        }
+        .login form {
+            background: transparent;
+        }
+        .login form::before {
+            display: block;
+            content: "Website Administration Area";
+            margin-top: -20px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .login label {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'liq_login_logo' );
+function liq_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'liq_login_logo_url' );
+function liq_login_logo_url_title() {
+    return 'Long Island Quartz';
+}
+add_filter( 'login_headertitle', 'liq_login_logo_url_title' );
+/* End Style Login */

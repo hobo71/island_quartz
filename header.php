@@ -55,14 +55,15 @@
 				<div class="ml-auto mr-2 text-white">
   						<ul class="navbar-nav">
   							<li class="instagram">
-  								<a target="_blank" href="https://www.instagram.com/longislandquartz/"><i class="fab fa-instagram text-white fa-lg"></i></a>
+  								<a target="_blank" href="https://www.instagram.com/longislandquartz/"><i class="fab fa-instagram text-white fa-lg mr-4"></i></a>
   							</li>
   							<li class="nav-item dropdown">
-  								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart mr-2"></i>Cart</a>
+  								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge badge-pill badge-success quantityCart">
+  									<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>Cart</a>
   								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-          							<a class="dropdown-item" href="cart/">My Cart</a>
-          							<a class="dropdown-item" href="my-account/">My Account</a>
-          							<a class="dropdown-item" href="checkout/">Checkout</a>
+          							<a class="dropdown-item" href="cart/"><i class="fas fa-shopping-cart mr-2"></i>My Cart (<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>)</a>
+          							<a class="dropdown-item" href="my-account/"><i class="fas fa-user-circle mr-2"></i>My Account</a>
+          							<a class="dropdown-item" href="checkout/"><i class="far fa-credit-card mr-2"></i>Checkout</a>
         						</div>
       						</li>
   						</ul>

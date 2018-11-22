@@ -5,8 +5,10 @@
 
 		<?php the_content(); ?>
 
+		<div class="pb-3">
+			<?php the_tags(); ?>
 
-
+		</div>
 
 	<?php endwhile; else : ?>
 		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
